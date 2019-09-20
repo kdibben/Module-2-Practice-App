@@ -15,19 +15,39 @@
     <main>
         <article>
             <section class="tip-calculator">
-                <label for="total">Total: </label>
-                <input id="total" type="text" class="form-control" required autofocus>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <label for="total">Total: </label>
+                                <input id="total" type="text" class="form-control" required autofocus> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="tip-label">Tip: </label>
+                            </td>
+                            <td>
+                                <label for="rate">Rate: </label>
+                                <input id="rate" type="text" class="form-control" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="tax">Tax: </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="grand-total">Grand Total: </label> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <label for="tip-label">Tip: </label>
-
-                <label for="rate">Rate: </label>
-                <input id="rate" type="text" class="form-control" required>
-
-                <label for="tax">Tax: </label>
-
-                <label for="grand-total">Grand Total: </label>
-
-                <button id="calculateTotal" type="submit">Calculate</button>
+                <div class="button">
+                    <button id="calculateTotal" type="submit">Calculate</button>
+                </div>
             </section>
         </article>
     </main>
